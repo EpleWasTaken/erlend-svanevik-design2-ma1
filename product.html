@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Old+Standard+TT&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="/" />
     <link rel="stylesheet" href="styles.css" />
     <title>Home Decor</title>
@@ -25,18 +37,20 @@
       </nav>
     </header>
 
-    <div class="container">
-      <img src="img/Paris.png" id="header-img" />
-    </div>
+    <img src="img/Paris.png" id="header-img" />
 
     <div class="container">
       <div class="content-container">
         <div class="product-content">
-          <h4>Kitchen</h4>
+          <h4 class="product-category">Kitchen</h4>
           <div class="card-container">
             <div class="products-card">
               <img src="img/mug.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="product-name">Tea cup</h4>
+              <p>
+                Super nice and userful decoration for the kitchen at a good
+                price.
+              </p>
               <button id="product-button-fav">
                 <img src="img/Heart.png" id="fav" />
               </button>
@@ -44,7 +58,11 @@
             </div>
             <div class="products-card">
               <img src="img/bowl.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="product-name">Bowl</h4>
+              <p>
+                Super nice and userful decoration for the kitchen at a good
+                price.
+              </p>
               <button id="product-button-fav">
                 <img src="img/Heart.png" id="fav" />
               </button>
@@ -52,36 +70,11 @@
             </div>
             <div class="products-card">
               <img src="img/oilHolder.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button id="product-button-fav">
-                <img src="img/Heart.png" id="fav" />
-              </button>
-              <button id="product-button">Buy now</button>
-            </div>
-          </div>
-
-        <div class="product-content">
-          <h4>Lounge</h4>
-          <div class="card-container">
-            <div class="products-card">
-              <img src="img/livingroomlightNB.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button id="product-button-fav">
-                <img src="img/Heart.png" id="fav" />
-              </button>
-              <button id="product-button">Buy now</button>
-            </div>
-            <div class="products-card">
-              <img src="img/livingroomplantNB.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button id="product-button-fav">
-                <img src="img/Heart.png" id="fav" />
-              </button>
-              <button id="product-button">Buy now</button>
-            </div>
-            <div class="products-card">
-              <img src="img/livingroompicsWHITE.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="product-name">Oil Holder</h4>
+              <p>
+                Super nice and userful decoration for the kitchen at a good
+                price.
+              </p>
               <button id="product-button-fav">
                 <img src="img/Heart.png" id="fav" />
               </button>
@@ -91,11 +84,57 @@
         </div>
 
         <div class="product-content">
-          <h4>Bedroom</h4>
+          <h4 class="product-category">Lounge</h4>
+          <div class="card-container">
+            <div class="products-card">
+              <img src="img/livingroomlightNB.png" id="product-image" />
+              <h4 class="product-name">Lantern</h4>
+              <p>
+                Super nice and warming decoration for the lounge area at a good
+                price.
+              </p>
+              <button id="product-button-fav">
+                <img src="img/Heart.png" id="fav" />
+              </button>
+              <button id="product-button">Buy now</button>
+            </div>
+            <div class="products-card">
+              <img src="img/livingroomplantNB.png" id="product-image" />
+              <h4 class="product-name">Plant</h4>
+              <p>
+                Super nice and warming decoration for the lounge area at a good
+                price.
+              </p>
+              <button id="product-button-fav">
+                <img src="img/Heart.png" id="fav" />
+              </button>
+              <button id="product-button">Buy now</button>
+            </div>
+            <div class="products-card">
+              <img src="img/livingroompicsWHITE.png" id="product-image" />
+              <h4 class="product-name">Nature pictures</h4>
+              <p>
+                Super nice and beautiful decoration for the lounge area at a
+                good price.
+              </p>
+              <button id="product-button-fav">
+                <img src="img/Heart.png" id="fav" />
+              </button>
+              <button id="product-button">Buy now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-content">
+          <h4 class="product-category">Bedroom</h4>
           <div class="card-container">
             <div class="products-card">
               <img src="img/officefrontlionWHITE.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="product-name">Lion picture</h4>
+              <p>
+                Super nice and beautiful decoration for the bedroom at a good
+                price.
+              </p>
               <button id="product-button-fav">
                 <img src="img/Heart.png" id="fav" />
               </button>
@@ -103,7 +142,11 @@
             </div>
             <div class="products-card">
               <img src="img/officefronttigerWHITE.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="product-name">Tiger picture</h4>
+              <p>
+                Super nice and beautiful decoration for the bedroom at a good
+                price.
+              </p>
               <button id="product-button-fav">
                 <img src="img/Heart.png" id="fav" />
               </button>
@@ -111,7 +154,11 @@
             </div>
             <div class="products-card">
               <img src="img/officesidewayslionWHITE.png" id="product-image" />
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="product-name">Lion sideways picture</h4>
+              <p>
+                Super nice and beautiful decoration for the bedroom at a good
+                price.
+              </p>
               <button id="product-button-fav">
                 <img src="img/Heart.png" id="fav" />
               </button>

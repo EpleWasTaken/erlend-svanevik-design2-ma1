@@ -27,7 +27,6 @@ body {
 
 header {
   background-color: rgba(0, 0, 0, 0.8);
-  margin-bottom: 20px;
 }
 
 nav {
@@ -55,7 +54,13 @@ nav {
   color: white;
   font-size: 20px;
   padding-left: 5px;
-  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+#search-bar:focus {
+  outline: none;
+  border: 1px solid white;
+  box-shadow: 0 0 10px white;
 }
 
 ul {
@@ -163,9 +168,14 @@ li:hover {
   object-fit: cover;
 }
 
-h4 {
+.product-category {
   text-align: center;
-  font-size: 40px;
+  font-family: "Old Standard TT", serif;
+  font-size: 60px;
+  color: white;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 20px;
 }
 
 .paragraph-container {
@@ -177,6 +187,7 @@ h4 {
   font-size: 20px;
   width: 50%;
   padding: 0px 20px 0px 20px;
+  font-family: "Cookie";
 }
 
 .content:hover,
@@ -189,6 +200,16 @@ h4 {
 .paragraph {
   font-size: 24px;
   max-width: 500px;
+  font-family: "Old Standard TT", serif;
+}
+
+.content h4,
+.content-reverse h4 {
+  text-align: center;
+  font-size: 60px;
+  font-family: "Cookie";
+  color: white;
+  text-align: left;
 }
 
 .content-offer {
@@ -210,19 +231,15 @@ h2 {
   font-size: 50px;
   color: white;
   width: 100%;
-}
-
-h4 {
-  color: white;
-  text-align: left;
-  padding-left: 15px;
-  padding-top: 20px;
-  font-size: 50px;
+  padding: 20px;
+  font-weight: 700;
+  font-family: "Cookie";
 }
 
 .product-content {
   margin-bottom: 40px;
   border-radius: 5px;
+  width: 100%;
 }
 
 .card-container {
@@ -256,12 +273,14 @@ h4 {
 }
 
 .card-container p {
-  font-size: 20px;
-  width: 80%;
+  font-size: 30px;
+  letter-spacing: 1px;
+  width: 70%;
   text-align: center;
   margin: auto;
   margin-bottom: 10px;
   margin-top: 10px;
+  font-family: "Old Standard TT", serif;
 }
 
 #product-button-fav {
@@ -295,12 +314,20 @@ h4 {
   color: white;
   transition: 0.3s ease-out;
   cursor: pointer;
+  font-size: 30px;
 }
 
 #product-button:hover,
 #product-button-fav:hover {
   transition: 0.2s ease-in;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.product-name {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Cookie";
 }
 
 @media screen and (max-width: 1024px) {
@@ -316,18 +343,14 @@ h4 {
     flex-direction: column;
   }
 
-  header {
-    margin-bottom: 20px;
-  }
-
   .card-container p {
-    font-size: 20px;
+    font-size: 30px;
   }
   .product-content {
     width: 90%;
   }
   .products-card {
-    min-width: 300px;
+    min-width: 200px;
   }
 
   .search-container {
@@ -337,14 +360,22 @@ h4 {
   ul {
     margin: auto;
   }
+
+  .product-content h4 {
+    text-align: center;
+  }
+
+  .products-card {
+    max-width: 95%;
+  }
 }
 @media screen and (max-width: 900px) {
   ul {
-    width: 70%;
+    display: none;
   }
 
   .paragraph {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .container {
@@ -353,5 +384,43 @@ h4 {
 
   h2 {
     font-size: 30px;
+  }
+
+  .content h4,
+  .content-reverse h4 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-container {
+    width: 100%;
+  }
+
+  #logo {
+    display: flex;
+    margin: auto;
+  }
+
+  .content,
+  .content-reverse {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #content-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  #content-img-right {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  .paragraph-container {
+    width: 100%;
   }
 }
